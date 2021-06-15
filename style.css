@@ -1,0 +1,624 @@
+/*Main Content Styling (Sections)*/
+
+body {
+    font-family: 'Finger Paint', cursive;
+    margin: 0;
+    background: #87CEEB;
+}
+
+
+header {
+    background-image: url('../../media/anzac2.jpg');
+    display: inline-block;
+    width: 100%;
+    text-align: centre;
+    max-height: 300px;
+    
+}
+
+nav {
+    margin-top: 100px;
+    background-color: #87CEEB;
+    display: inline-block;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border: 10px solid #1b1b3f;
+    font-size: 20px;
+    z-index: 10;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1b1b3f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #f2f2f2;
+}
+
+article {
+    background-color: #87CEEB;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+    border: 5px groove #1b1b3f;
+}
+
+p {
+    font-family: 'Finger Paint', cursive;
+    font-size: 1vw;
+}
+
+/*Main Content Styling (Elements)*/
+
+
+h1 {
+    font-family: 'Finger Paint', cursive;
+    position: absolute;
+    top: 0;
+    padding-left: 50px;
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+}
+h2{
+    font-family: 'Finger Paint', cursive;
+}
+
+a {
+
+    display: inline-block;
+    color: #1b1b3f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: sticky;
+}
+
+ul {
+    font-family: 'Finger Paint', cursive;
+    font-size: 1vw;
+}
+
+button {
+
+   display: inline-block;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    resize: vertical;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    position:sticky;
+    vertical-align: middle;
+}
+
+label {
+    margin: 5px 0px 0px 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #1b1b3f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
+input[type=submit]:hover {
+    background-color: #1b1b3f;
+    
+}
+
+input[type="checkbox"] {}
+
+
+
+
+
+/*Classes styling*/
+
+.internallink {
+    padding: 5px;
+    background-color: #87CEEB;
+
+}
+
+.handwriting {
+    font-family: 'Marck Script', cursive;
+    font-size: 2em;
+}
+
+a.active {
+    background-color: #1b1b3f;
+    color: white;
+
+}
+
+a:hover:not(.active) {
+    background-color: #aaa;
+    color: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+.leftcolumn {
+    float: left;
+    width: 74%;
+    margin-left: 1%;
+}
+
+
+.rightcolumn {
+    float: left;
+    width: 22%;
+    margin-left: 10px;
+}
+
+.mailleft {
+    float: left;
+    display: inline-block;
+    top: 460px;
+    position: sticky;
+    width: 10%;
+    margin-left: 10px;
+
+}
+
+.mailright {
+    float: left;
+    display: inline-block;
+    margin-right: 30px;
+    ;
+    margin-left: 30px;
+    ;
+    margin-top: 3%;
+    width: 80%;
+}
+
+.imgleft {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    margin-right: 30px;
+    
+}
+
+.imgright {
+    float: right;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 30px;
+   
+}
+
+.parralax {
+    background-image: url('grassbackground.png');
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dropbtn {
+    background-color: #87CEEB;
+    
+    font-family: 'Finger Paint', cursive;
+    font-size: 20px;
+
+
+    border: none;
+    cursor: pointer;
+}
+
+.topnav {
+    display: inline-block;
+
+
+    color: #87CEEB;
+    text-align: centre;
+    padding: 5px;
+    text-decoration: none;
+    position: sticky;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #87CEEB;
+    min-width: 160px;
+    overflow: visible;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: 'Finger Paint', cursive;
+    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #aaa;
+}
+
+.show {
+    display: block;
+}
+
+.terms {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.3em 0.3em;
+}
+
+.terms h3 {
+    margin: 5px 0px 0px 5px;
+}
+
+.terms div {
+    border: thin dotted #aaa;
+    background-color: #1111;
+}
+.articlemail{
+    padding-top: 60px;
+    overflow: auto;
+    
+}
+
+input:invalid:focus {
+  
+  background-color:#fee;
+}
+
+.validationtext{
+    text-align: end;
+    color: red;
+    margin: 0;
+    font-size: 12px;
+}
+/* Identified by Id's */
+#formarticle {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    border: 20px solid rgba(236, 243, 160, .5);
+}
+
+#form {
+    display: grid;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.2em 0.5em;
+    
+    
+}
+
+
+#photo {
+    float: right;
+    padding: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Assignment3 */
+
+.visable {
+    visibility: visible;
+   
+}
+
+#slide {
+    visibility: hidden;
+    right:0;
+    padding-right: 20px;
+}
+
+#slidetext {
+    color: white;
+   font-family: 'Finger Paint', cursive;
+    transform: translateX(-90px);
+    text-align: right;
+     font-size: 1em;
+
+}
+
+.anamation {
+    position: absolute;
+    transform: translateY(-200px);
+    animation: shift 1s linear 1 forwards;
+    color: white;
+    margin-left: 10px;
+
+
+}
+
+@keyframes shift {
+    to {
+        transform: translateY(0px);
+        transform: scale(2,2);
+    }
+
+
+
+    /*Scroll Header appearing*/
+
+    #top-of-site-pixel-anchor {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        top: 500px;
+        left: 0;
+    }
+
+    body.header-not-at-top & {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    @at-root {
+        body.header-not-at-top {
+            padding-top: 44px;
+        }
+    }
+
+}
+
+
+/* TANK HEADER   Code apdated from and images by Landrik with the Parralax animation Hero Demo https://bashooka.com/coding/pure-css-parallax-scrolling-examples/*/
+
+.hero {
+    width: 100%;
+    height: 450px;
+
+
+    position: relative;
+    background: #87CEEB;
+    transform: translate3d(0, 0, 0);
+
+}
+
+.ground1 {
+    animation: parallax_fg linear 130s infinite both;
+    background: url(grass2.png) 0 100% repeat-x;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 145px;
+    
+}
+
+.ground2 {
+    animation: parallax_fg linear 155s infinite both;
+    background: url(grass2.png) 0 100% repeat-x;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 258px;
+   
+}
+
+.trees1 {
+    animation: parallax_fg linear 175s infinite both;
+    background: url(grass3.png) 0 100% repeat-x;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2100px;
+    height: 550px;
+    background-size: auto 468px;
+    
+}
+
+.trees2 {
+    animation: parallax_fg linear 195s infinite both;
+    background: url(grass2.png) 0 100% repeat-x;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2100px;
+    height: 450px;
+    background-size: auto 311px;
+    
+}
+
+.trees3 {
+    animation: parallax_fg linear 220s infinite both;
+    background: url(grass2.png) 0 100% repeat-x;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 222px;
+    
+    
+}
+
+.tankwrapper1{
+    animation: tankwrapper1 linear 40s infinite both;
+}
+
+.tank-1 {
+    background: url('https://orig00.deviantart.net/f781/f/2013/244/c/d/cd58e0d7ae01cf7ed2bfddde626f72f5-d6knr1i.gif') 0 100% no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 120px;
+    animation: parallax_tank1 linear 40s infinite both;
+    
+}
+
+.tank-2 {
+    background: url('https://media.tenor.com/images/21886abc9329619354c4f951b36b47f2/tenor.gif') 0 100% no-repeat;
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 220px;
+    animation: parallax_tank2 linear 35s infinite both;
+    
+}
+
+@keyframes parallax_fg {
+    0% {
+        background-position: 2765px 100%;
+    }
+
+    100% {
+        background-position: 550px 100%;
+    }
+}
+
+@keyframes tankwrapper1{
+   
+}
+
+@keyframes parallax_tank1 {
+    100% {
+        background-position: -400px 100%;
+    }
+   
+    
+    0% {
+        background-position: 2400px 100%;
+    }
+}
+
+@keyframes parallax_tank2 {
+    100% {
+        ;
+        background-position: -600px 100%;
+    }
+
+    0% {
+        
+        ;
+        background-position: 2050px 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #form {
+        grid-template-columns: auto;
+
+    }
+
+    .mailleft {
+        display: none;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        #slidetext{
+             font-size: 0.5em;
+            transform: translateX(-90px);
+        }
+        .leftcolumn,
+        .rightcolumn{
+            width: 100%;
+             width: 100%;
+            padding-right: 20px;
+            
+        }
+    }
+    /* Media Responsive  */
+   
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+        .hero {
+            display: none;
+        }
+
+        #slide {
+            display: none;
+            height: 0;
+            width:0;
+                
+        }
+
+        .leftcolumn,
+        .rightcolumn,
+            {
+            width: 100%;
+            padding: 0;
+        }
+
+        .mailleft {
+            display: none;
+
+        }
+
+        .mailright {
+            width: 100%;
+            padding-right: 50px;
+        }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 200px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style >
